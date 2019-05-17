@@ -1,0 +1,18 @@
+
+------------
+ Camera 0.8
+------------
+
+Camera is a simple application to download files from a digital
+camera. The files can be optionally deleted after download. During
+download, a thumbnail of the currently downloaded file is displayed.
+
+It is strongly recommended to read INSTALL for requirements before
+you try to build and install Camera.
+
+Bug reports, suggestions, code contributions etc. are welcome. Please
+send them me directly: 
+Stefan Kleine Stegemann <stefan@wms-network.de>
+
+For more informations about Camera see the project homepage:
+http://home.gna.org/gsimageapps/

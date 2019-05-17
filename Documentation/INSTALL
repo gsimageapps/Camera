@@ -1,0 +1,44 @@
+#############################
+##### Camera DEPENDS ########
+#############################
+
+GNUstep
+ - gnustep-make
+ - gnustep-base (Foundation Kit)
+ - gnustep-gui  (Application Kit)
+
+see http://www.gnustep.org 
+
+Camera requires the latest version of gnustep-gui
+with wraster-independant image loading. Otherwise
+you cannot display thumbnails during download (Camera
+will segfault because the usage of wraster inside
+GNUstep is not threadsafe). If you do not have or
+do not want to install the latest version, you can
+set the default WithThumbnails to NO.
+On the commandline type:
+defaults write Camera WithThumbnails 'NO'
+This will prevent Camera from displaying thumbnails.
+
+
+Installed and working version of libgphoto:
+see http://gphoto.sourceforge.net/proj/libgphoto2/
+
+
+##############################
+########COMPILE ##############
+##############################
+
+* From command line.
+
+first, make sure the gphoto2-config is in yout path
+
+unarchive Camera :
+gunzip -c Camera-X.Y.tar.gz | tar xvf -
+cd Camera-X-Y
+make 
+make install (su or sudo if need)
+
+Note that gnu make is needed. On some system, gnu make is 
+installed as gmake.
+

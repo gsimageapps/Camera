@@ -1,0 +1,25 @@
+{
+    ApplicationDescription = "Download files from your digital camera.";
+    ApplicationIcon = "Camera.png";
+    ApplicationName = Camera;
+    ApplicationRelease = 0.8;
+    Authors = ("Stefan Kleine Stegemann<stefan@wms-network.de>");
+    Copyright = "Copyright \U00a9 2003 Stefan Kleine Stegemann";
+    CopyrightDescription = "Released under GPL";
+    FullVersionID = 0.8;
+    URL = "http://http://home.gna.org/gsimageapps/"
+/*
+    NSServices = (
+       {
+          NSPortName = Camera;
+          NSMessage = downloadFilesToPlace;
+          NSSendTypes = (NSFilenamesPboardType);
+          NSMenuItem = 
+          {
+             default = "Camera/Download files to this directory";
+             German = "GNUMail/Dateien in dieses Verzeichnis laden";
+          };
+       }
+    );
+*/
+}
